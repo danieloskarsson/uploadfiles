@@ -3,7 +3,6 @@ package se.knowit.developer.files;
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileUploadBase;
 import org.apache.commons.fileupload.FileUploadException;
-import org.apache.commons.fileupload.ProgressListener;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import org.apache.commons.io.FileUtils;
@@ -35,7 +34,6 @@ public class UploadServlet extends HttpServlet {
             DiskFileItemFactory diskFileItemFactory = new DiskFileItemFactory();
             ServletFileUpload servletFileUpload = new ServletFileUpload(diskFileItemFactory);
             servletFileUpload.setSizeMax(94371840); // 94371840 bytes == 90 megabytes @ 1024 bytes per MB
-            servletFileUpload.setProgressListener(progressListener);
 
             List fileItemsList = null;
             try {
@@ -73,22 +71,5 @@ public class UploadServlet extends HttpServlet {
         IOUtils.copy(inputStream, outputStream);
         return link;
     }
-
-    ProgressListener progressListener = new ProgressListener() {
-        private long megaBytes = -1;
-        public void update(long pBytesRead, long pContentLength, int pItems) {
-            long mBytes = pBytesRead / 1000000;
-            if (megaBytes == mBytes) {
-                return;
-            }
-            megaBytes = mBytes;
-            System.out.println("We are currently reading item " + pItems);
-            if (pContentLength == -1) {
-                System.out.println("So far, " + pBytesRead + " bytes have been read.");
-            } else {
-                System.out.println("So far, " + pBytesRead + " of " + pContentLength + " bytes have been read.");
-            }
-        }
-    };
 
 }

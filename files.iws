@@ -81,10 +81,8 @@
       <file leaf-file-name="UploadServlet.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/se/knowit/developer/files/UploadServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="54" selection-start="3838" selection-end="3838" vertical-scroll-proportion="1.7571702">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="5" column="0" selection-start="194" selection-end="194" vertical-scroll-proportion="-0.74378586">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -116,9 +114,9 @@
         <option value="$PROJECT_DIR$/src/main/java/se/knowit/developer/files/UploadHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/se/knowit/developer/files/HelloWorldServlet.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/se/knowit/developer/files/UploadServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/se/knowit/developer/files/UploadServlet.java" />
       </list>
     </option>
   </component>
@@ -527,10 +525,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/se/knowit/developer/files/UploadServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="54" selection-start="3838" selection-end="3838" vertical-scroll-proportion="1.7571702">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="5" column="0" selection-start="194" selection-end="194" vertical-scroll-proportion="-0.74378586">
+          <folding />
         </state>
       </provider>
     </entry>
