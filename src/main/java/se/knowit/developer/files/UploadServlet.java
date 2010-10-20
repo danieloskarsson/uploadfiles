@@ -27,7 +27,7 @@ import javax.servlet.*;
  */
 public class UploadServlet extends HttpServlet {
 
-    private static String SERVER_PREFIX = "http://localhost:8080/";
+    private static String SERVER_PREFIX = "http://localhost:8080/files/";
 
     public void doPost (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         if (ServletFileUpload.isMultipartContent(request)) {
@@ -63,8 +63,10 @@ public class UploadServlet extends HttpServlet {
 
     private String uploadFile(FileItem fileItem) throws IOException {
         UUID uuid = UUID.randomUUID();
-        String link = "files/" + uuid.toString() + "/" + fileItem.getName();
-        File file = new File("../webapps/" + link);
+        String root = getServletContext().getRealPath("/");
+        String link = uuid.toString() + "/" + fileItem.getName();
+
+        File file = new File(root + link);
         FileUtils.writeStringToFile(file, ""); // To create empty file
         OutputStream outputStream = new FileOutputStream(file);
         InputStream inputStream = fileItem.getInputStream();

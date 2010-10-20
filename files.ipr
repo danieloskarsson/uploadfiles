@@ -341,17 +341,6 @@
     <mapping directory="" vcs="" />
   </component>
   <component name="libraryTable">
-    <library name="Maven: junit:junit:4.8.2">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.8.2/junit-4.8.2.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.8.2/junit-4.8.2-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.8.2/junit-4.8.2-sources.jar!/" />
-      </SOURCES>
-    </library>
     <library name="Maven: commons-fileupload:commons-fileupload:1.2.2">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/commons-fileupload/commons-fileupload/1.2.2/commons-fileupload-1.2.2.jar!/" />
