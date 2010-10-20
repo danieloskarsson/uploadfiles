@@ -1,7 +1,7 @@
 <%@ page import="se.knowit.developer.files.*" %>
 <html>
     <head>
-        <title>Know IT Files</title>
+        <title>Files</title>
     </head>
     <body>
         <h2>Upload file</h2>
