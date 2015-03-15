@@ -1,0 +1,1 @@
+Deploy files in your favorite servlet container and simply share files with others. The project has been tested on Tomcat 6 on Mac OS X and Ubuntu.
